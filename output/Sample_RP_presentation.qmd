@@ -1,0 +1,119 @@
+---
+title:    "Research visit project proposal"
+subtitle: "Modeling and predicting depression trajectories"
+date:     "17 nov, 2022"
+author:   "Daniel Morillo, Ph.D."
+format:
+  revealjs:
+    fig-align:               center
+    fig-cap-location:        bottom
+    incremental:             true
+    link-external-newwindow: true
+    preview-links:           true
+    preload-iframes:         true
+    self-contained:          true
+    theme:                   simple
+    view-distance:                3
+bibliography: ../www/rp-presentation.bib
+---
+
+## Introduction
+
+## Topic
+
+<br>
+
+> Diverse trajectory patterns of depression will be identified with a relevant
+> role of time-varying determinants (e.g. cognitive function) on the severity of
+> depressive symptoms.
+
+::: fragment
+### *Modeling and predicting depression trajectories*
+:::
+
+## Context
+
+<br>
+
+Project [*Edad con Salud*](http://edadconsalud.com/?lang=en)
+
+-   Longitudinal cohort Ageing study
+
+-   Two cohorts: original (2011) and refreshment (2019)
+
+-   Waves: 4 (original cohort), 2 + lockdown substudy (refreshment sample)
+
+-   One more wave projected for each cohort
+
+::: fragment
+(More details in @lara2022)
+:::
+
+## Research questions {.smaller}
+
+<br>
+
+**Primary RQ:**
+
+-   Do there exist different, theoretically relevant, trajectories of
+    depression, throughout the course of the lifetime?
+
+::: fragment
+**Secondary RQQ:**
+:::
+
+1.  Do certain time-invariant (e.g. sociodemographics) or time-varying (e.g.
+    cognitive function, treatment(s)) covariates predict the trajectories of the
+    individuals?
+
+2.  How does depression relate to health outcomes (i.e., disease burden,
+    disability, and mortality)?
+
+3.  What has been the impact (shock) of the pandemic/lockdown measures on the
+    different depression trajectory classes?
+
+## Measures
+
+<br>
+
+On Cohort 2011:
+
+-   **Primary outcome:** ICD10-based 12-month depressive episode (dichotomous /
+    severity-coded)
+
+-   **Covariates:** sociodemographics (age, sex, SES, education), cognitive
+    function, loneliness (...?)
+
+-   **Other relevant outcomes:** health score, disability, mortality
+
+## Modeling approach {.smaller}
+
+<br>
+
+**Group-based Trajectory Modeling** [@nagin1999]
+
+<br>
+
+::: {style="text-align: center;"}
+![Estimated probability of 12-month MDE
+[@xiang2019]](../www/Xiang-Cheng-2019_Figure-1.jpg){fig-align="center"
+width="60%"}
+:::
+
+## Modeling approach
+
+<br>
+
+**Advantages:**
+
+-   Covariates may be included in the model
+
+-   May account for nonrandom attrition [e.g. mortality, @haviland2011]
+
+-   Multiple/joint trajectories can be modeled [@nagin2001]
+
+::: fragment
+**Alternatively:** Growth Mixture Modeling [@muthén1999] (for SRQ 3?)
+:::
+
+## References {.smaller}
