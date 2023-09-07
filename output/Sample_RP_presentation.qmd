@@ -1,7 +1,6 @@
 ---
-title:    "Research visit project proposal"
-subtitle: "Modeling and predicting depression trajectories"
-date:     "17 nov, 2022"
+title:    "A longitudinal modeling framework for depression trajectories in the Spanish adult population"
+date:     "7 sep, 2023"
 author:   "Daniel Morillo, Ph.D."
 format:
   revealjs:
@@ -18,6 +17,43 @@ bibliography: ../www/rp-presentation.bib
 ---
 
 ## Introduction
+
+-   one in five individuals will experience one episode at some point in their
+    lifetime (WHO, 2012)
+
+-   the most likely period for the onset of the first episode of depression
+    extends from 20s to mid-40s, a significant proportion of individuals
+    experience their first episode at older ages (i.e. 60+ ages) (Hasin et al.,
+
+    2005) 
+
+-   Late (vs. early) onset depression has a distinctive impact on health and
+    wellbeing.
+
+-   Depression in older adults is associated with increased risk of morbidity,
+    decreased physical, cognitive and social functioning, and higher mortality
+    (McLaughlin, 2011).
+
+-   investigating the course of depression and/or depressive symptoms in
+    longitudinal prospective studies with the aim of understanding its
+    determinants and which trajectory patterns are associated with worse
+    outcomes (i.e. poor cognitive function, higher rates of suicidal behaviour,
+    and mortality) is needed
+
+## Objectives
+
+-   because of the serious functional limitations, long-term care needs, and
+    substantial financial and societal costs of depression, it is relevant to
+    increase our knowledge about the factors that determine the onset and
+    maintenance of depression as well as the significance of symptom timing to
+    establish associations with other health-related outcomes and for effective
+    treatment of depressed older adults.
+
+-   differ by gender, marital status, socioeconomic factors, lifestyle
+    behaviours, cognitive reserve, or the presence of physical or mental
+    comorbidities among other variables (Köhler et al., 2018), while the
+    time-varying impact of these factors over the old age are yet unknown (e.g.
+    cognitive function).
 
 ## Topic
 
@@ -117,3 +153,4 @@ width="60%"}
 :::
 
 ## References {.smaller}
+
