@@ -1,9 +1,16 @@
 ---
 title:    "A longitudinal modeling framework for depression trajectories in the Spanish adult population"
-date:     "7 sep, 2023"
-author:   "Daniel Morillo, Ph.D."
+date:        2023-09-09
+date-format: long
+author:      |
+  Daniel Morillo, Ph.D.\
+    [![](../www/github-logo.png){height="50"}](https://github.com/DaniMori/)&emsp;
+    [![](../www/orcid.png){height="50"}](https://orcid.org/0000-0003-3021-3878)
+institute: '[![](../www/cibersam.png){height="75"}](https://www.cibersam.es/)'
+
 format:
   revealjs:
+    auto-stretch:            true
     fig-align:               center
     fig-cap-location:        bottom
     incremental:             true
@@ -11,43 +18,77 @@ format:
     preview-links:           true
     preload-iframes:         true
     self-contained:          true
-    theme:                   simple
-    view-distance:                3
+    slide-number:            false
+    theme:                   ../www/extra-styles.scss
+    transition:              slide
+    view-distance:           3
+    template-partials:
+      - ../www/title-slide.html
 bibliography: ../www/rp-presentation.bib
 ---
 
 ## Introduction
 
+<br>
+
+-   20% of lifetime prevalence of Major Depressive episode
+    [@worldfederationformentalhealth2012].
+-   Signifcant proportion experience onset at 60+ [@hasin2005].
+-   Distinct impact on health and wellbeing [@mclaughlin2011].
+
+::: notes
 -   one in five individuals will experience one episode at some point in their
     lifetime (WHO, 2012)
 
 -   the most likely period for the onset of the first episode of depression
-    extends from 20s to mid-40s, a significant proportion of individuals
-    experience their first episode at older ages (i.e. 60+ ages) (Hasin et al.,
+    extends from 20s to mid-40s, but there are differences: a significant
+    proportion of individuals experience their first episode at older ages.
 
-    2005) 
+-   Late onset depression has a distinctive impact on health and wellbeing.
+    Depression in older adults is associated with increased risk of morbidity,
+    decreased physical, cognitive and social functioning, and higher mortality.
+:::
 
--   Late (vs. early) onset depression has a distinctive impact on health and
-    wellbeing.
+## Antecedents
 
--   Depression in older adults is associated with increased risk of morbidity,
-    decreased physical, cognitive and social functioning, and higher mortality
-    (McLaughlin, 2011).
+<br>
 
--   investigating the course of depression and/or depressive symptoms in
-    longitudinal prospective studies with the aim of understanding its
-    determinants and which trajectory patterns are associated with worse
-    outcomes (i.e. poor cognitive function, higher rates of suicidal behaviour,
-    and mortality) is needed
+::: {style="text-align: center;"}
+![Estimated probability of 12-month MDE
+[@xiang2019]](../www/Xiang-Cheng-2019_Figure-1.jpg){fig-align="center"
+width="60%"}
+:::
+
+::: fragment
+**Modeling:** Group-based Trajectory Modeling [@nagin1999].
+:::
+
+::: notes
+Xiang & Cheng find distinct trajectories of probability of MDE.
+
+We expect to find similar results in a Spanish, representative sample.
+
+But their modeling approach is a fixed-effect model; does not take into account
+individual variability.
+
+Depression binary-coded, while we will apply an ordinal severity coding with
+three severity levels, apart from absence of depression.
+:::
 
 ## Objectives
 
--   because of the serious functional limitations, long-term care needs, and
-    substantial financial and societal costs of depression, it is relevant to
-    increase our knowledge about the factors that determine the onset and
-    maintenance of depression as well as the significance of symptom timing to
-    establish associations with other health-related outcomes and for effective
-    treatment of depressed older adults.
+<br>
+
+-   Investigate distinct courses of depression in Spanish adult longitudinal
+    cohort.
+
+-   Identify covariates associated with differential evolution of depression.
+
+-   Determine the effect of the different trajectory patterns on associated
+    health outcomes.
+
+::: notes
+-   Trajectories
 
 -   differ by gender, marital status, socioeconomic factors, lifestyle
     behaviours, cognitive reserve, or the presence of physical or mental
@@ -55,19 +96,10 @@ bibliography: ../www/rp-presentation.bib
     time-varying impact of these factors over the old age are yet unknown (e.g.
     cognitive function).
 
-## Topic
-
-<br>
-
-> Diverse trajectory patterns of depression will be identified with a relevant
-> role of time-varying determinants (e.g. cognitive function) on the severity of
-> depressive symptoms.
-
-::: fragment
-### *Modeling and predicting depression trajectories*
+-   E.g. poor cognitive function, suicidal behaviour, mortality
 :::
 
-## Context
+## Design
 
 <br>
 
@@ -75,11 +107,11 @@ Project [*Edad con Salud*](http://edadconsalud.com/?lang=en)
 
 -   Longitudinal cohort Ageing study
 
--   Two cohorts: original (2011) and refreshment (2019)
+-   Two cohorts: **original (2011)** and refreshment (2019)
 
--   Waves: 4 (original cohort), 2 + lockdown substudy (refreshment sample)
+-   Waves: **4 (original cohort)**, 2 + lockdown substudy (refreshment sample)
 
--   One more wave projected for each cohort
+-   (One more wave projected for each cohort)
 
 ::: fragment
 (More details in @lara2022)
@@ -94,6 +126,8 @@ Project [*Edad con Salud*](http://edadconsalud.com/?lang=en)
 -   Do there exist different, theoretically relevant, trajectories of
     depression, throughout the course of the lifetime?
 
+<br>
+
 ::: fragment
 **Secondary RQQ:**
 :::
@@ -105,20 +139,17 @@ Project [*Edad con Salud*](http://edadconsalud.com/?lang=en)
 2.  How does depression relate to health outcomes (i.e., disease burden,
     disability, and mortality)?
 
-3.  What has been the impact (shock) of the pandemic/lockdown measures on the
-    different depression trajectory classes?
-
 ## Measures
 
 <br>
 
 On Cohort 2011:
 
--   **Primary outcome:** ICD10-based 12-month depressive episode (dichotomous /
-    severity-coded)
+-   **Primary outcome:** ICD10-based *inter-survey* depressive episode
+    (severity-coded)
 
 -   **Covariates:** sociodemographics (age, sex, SES, education), cognitive
-    function, loneliness (...?)
+    function, loneliness, ...
 
 -   **Other relevant outcomes:** health score, disability, mortality
 
@@ -126,31 +157,77 @@ On Cohort 2011:
 
 <br>
 
-**Group-based Trajectory Modeling** [@nagin1999]
+**Growth Mixture Modeling** [@muthén1999]
 
 <br>
 
-::: {style="text-align: center;"}
-![Estimated probability of 12-month MDE
-[@xiang2019]](../www/Xiang-Cheng-2019_Figure-1.jpg){fig-align="center"
-width="60%"}
-:::
-
-## Modeling approach
-
-<br>
-
+::: fragment
 **Advantages:**
+
+-   Random effects
 
 -   Covariates may be included in the model
 
--   May account for nonrandom attrition [e.g. mortality, @haviland2011]
+-   Account for mortality [@haviland2011]
 
--   Multiple/joint trajectories can be modeled [@nagin2001]
+-   Multiple/joint trajectories [@nagin2001]
+:::
+
+<br>
 
 ::: fragment
-**Alternatively:** Growth Mixture Modeling [@muthén1999] (for SRQ 3?)
+**Disadvantages:**
+
+-   Complexity
+:::
+
+::: notes
+Similar to GBTM but...
+
+contemplates random effects to account for individual variability
+
+Can account for nonrandom attrition and multiple trajectories, as is the case
+with the GBTM
+
+Difficult to find convergence
+:::
+
+## Data analysis
+
+<br>
+
+1.  Descriptive analyses
+
+2.  Fit GMM to longitudinal MDE data and interpret classes
+
+3.  Predict latent class membership from covariates
+
+4.  Include health-related outcomes by modeling:
+
+    -   Attrition (mortality)
+
+    -   Multiple-trajectory model (helath-related outcomes)
+
+## Limitations
+
+<br>
+
+-   Time resolution
+
+<br>
+
+-   Non-coetaneous subjects
+
+<br>
+
+-   Computational resources
+
+::: notes
+Few datapoints, 3 years apart
+
+Limitations of modeling approach must be acknowledged
+
+Models are computationally expensive
 :::
 
 ## References {.smaller}
-

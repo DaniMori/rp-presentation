@@ -18,3 +18,5 @@ StripTrailingWhitespace: Yes
 MarkdownWrap: Column
 MarkdownWrapAtColumn: 80
 MarkdownCanonical: Yes
+
+ZoteroLibraries: "My Library"
