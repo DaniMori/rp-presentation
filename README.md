@@ -1,34 +1,21 @@
 
-# Repository `<repository-name>`
+# Repository `rp-presentation`
 
-<repository-description>
+Research project presentation for interview with the “Lonsdorf Lab” team
 
 # License
 
-This template is licensed under the [Creative Commons Attribution 4.0
+This project is licensed under the [Creative Commons Attribution 4.0
 International license](https://creativecommons.org/licenses/by/4.0/).
 Please see the [license file](LICENSE.md).
 
-When using this template, please don’t forget to:
+## Attributions
 
-- Adapt this license section to your own needs
-
-- License your own content, and remember that [open is
-  better](https://choosealicense.com/).
-
-- Link to the [original
-  license](https://creativecommons.org/licenses/by/4.0/) and give
-  appropriate credit; please do so by including the following in the
-  “License” section of the README.md file in your own project:
-
-  > ## Attributions
-  >
-  > This project makes use of the
-  > [rproj-template](https://github.com/DaniMori/rproj-template) Github
-  > template created by [Daniel Morillo](https://github.com/DaniMori)
-  > and licensed under the [Creative Commons Attribution 4.0
-  > International
-  > license](https://creativecommons.org/licenses/by/4.0/).
+This project makes use of the
+[rproj-template](https://github.com/DaniMori/rproj-template) Github
+template created by [Daniel Morillo](https://github.com/DaniMori) and
+licensed under the [Creative Commons Attribution 4.0 International
+license](https://creativecommons.org/licenses/by/4.0/).
 
 # Project installation
 
@@ -76,7 +63,7 @@ instructions](https://book.cds101.com/using-rstudio-server-to-clone-a-github-rep
 specified. The URL that must be entered into the `Repository URL` text
 box is:
 
-    <repository_url>
+    https://github.com/DaniMori/rp-presentation.git
 
 **IMPORTANT:** It is totally unrecommended to clone a git repository
 inside a cloud storage folder (e.g., Dropbox, OneDrive). Please note
@@ -122,26 +109,12 @@ renv::restore()
 
 The file structure of this repository is as follows:
 
-    <repository-folder>
+    rp-presentation
     |
-    |--- dat          (To store input datasets; must NEVER be checked-in to Github)
+    |--- output (Processing outputs; files must be individually "checked-in" when
+    |           necessary)
     |
-    |--- doc          (To store important documentation of the project)
-    |    |
-    |    |--- minutes (To store meeting minutes)
-    |
-    |--- notebooks    (Notebooks to explore data and test processes live here)
-    |
-    |--- output       (Processing outputs; files must be individually "checked-in"
-    |                 when necessary)
-    |
-    |--- R            (R functions created for this project live here)
-    |
-    |--- renv         (System library necesssary for `renv` to work. DON'T TOUCH)
-    |
-    |--- src          (Source scripts that implement the main processes)
-    |
-    |--- www          (Project assets, e.g., images, bibliography files, etc.)
+    |--- www    (Project assets, e.g., images, bibliography files, etc.)
 
 Use the folders as indicated to store the different files and generate
 the outputs of the processes.
