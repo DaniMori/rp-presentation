@@ -212,17 +212,18 @@ Difficult to find convergence
 
 <br>
 
+-   Observational study
+
 -   Time resolution
 
-<br>
-
 -   Non-coetaneous subjects
-
-<br>
 
 -   Computational resources
 
 ::: notes
+Purely observational, there is no manipulation or intervention so difficult to
+draw conclusions about causality
+
 Few datapoints, 3 years apart
 
 Limitations of modeling approach must be acknowledged
